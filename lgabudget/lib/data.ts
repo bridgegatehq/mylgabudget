@@ -1,0 +1,113 @@
+import { ElectionData } from "./types";
+
+export const mockElectionData: ElectionData = {
+  year: 2023,
+  state: "Oyo",
+  electionType: "Governorship",
+  parties: [
+    {
+      id: "pdp-2023",
+      party: "PDP",
+      partyLogo: "🔴",
+      isWinner: true,
+      candidates: [
+        {
+          id: "pdp-gov",
+          name: "Dr. Shina Peller",
+          age: 45,
+          gender: "Male",
+          position: "Governor",
+          image: "/assets/hero-image.png",
+          profileUrl: "#",
+        },
+        {
+          id: "pdp-dep",
+          name: "Justina Ogbonnaya",
+          age: 45,
+          gender: "Male",
+          position: "Deputy Governor",
+          image: "/assets/hero-image.png",
+          profileUrl: "#",
+        },
+      ],
+    },
+    {
+      id: "apc-1-2023",
+      party: "APC",
+      partyLogo: "🇳🇬",
+      isWinner: false,
+      candidates: [
+        {
+          id: "apc1-gov",
+          name: "Israel Faizul",
+          age: 45,
+          gender: "Male",
+          position: "Governor",
+          image: "/assets/hero-image.png",
+          profileUrl: "#",
+        },
+        {
+          id: "apc1-dep",
+          name: "Tolani Bayode",
+          age: 45,
+          gender: "Male",
+          position: "Deputy Governor",
+          image: "/assets/hero-image.png",
+          profileUrl: "#",
+        },
+      ],
+    },
+    {
+      id: "apc-2-2023",
+      party: "APC",
+      partyLogo: "🏅",
+      isWinner: false,
+      candidates: [
+        {
+          id: "apc2-gov",
+          name: "Adese Samson",
+          age: 45,
+          gender: "Male",
+          position: "Governor",
+          image: "/assets/hero-image.png",
+          profileUrl: "#",
+        },
+        {
+          id: "apc2-dep",
+          name: "Solomon Ideh",
+          age: 45,
+          gender: "Male",
+          position: "Deputy Governor",
+          image: "/assets/hero-image.png",
+          profileUrl: "#",
+        },
+      ],
+    },
+    {
+      id: "apc-3-2023",
+      party: "APC",
+      partyLogo: "🌿",
+      isWinner: false,
+      candidates: [
+        {
+          id: "apc3-gov",
+          name: "Esther Joel",
+          age: 45,
+          gender: "Male",
+          position: "Governor",
+          image: "/assets/hero-image.png",
+          profileUrl: "#",
+        },
+        {
+          id: "apc3-dep",
+          name: "Josh Michael",
+          age: 45,
+          gender: "Male",
+          position: "Deputy Governor",
+          image: "/assets/hero-image.png",
+          profileUrl: "#",
+        },
+      ],
+    },
+  ],
+};
