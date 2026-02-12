@@ -126,3 +126,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg{
+  background: linear-gradient(180deg, rgba(255, 107, 107, 0.1) 0%, rgba(253, 107, 107, 0.1) 39%, rgba(0, 123, 138, 0.1) 120.24%);
+
+}
