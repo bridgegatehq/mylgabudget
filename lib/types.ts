@@ -25,14 +25,46 @@ export interface ElectionData {
 
 export type ElectionTab = "upcoming" | "candidates" | "past";
 
-export const ELECTION_YEARS = [2023, 2027, 2031, 2035, 2039, 2043] as const;
+export interface BudgetOfficer {
+  name: string;
+  position: string;
+  party: string;
+  image: string;
+  startDate?: string;
+}
 
-export const NIGERIAN_STATES = [
-  "Abia", "Adamawa", "Akwa Ibom", "Anambra", "Bauchi", "Bayelsa",
-  "Benue", "Borno", "Cross River", "Delta", "Ebonyi", "Edo",
-  "Ekiti", "Enugu", "Gombe", "Imo", "Jigawa", "Kaduna",
-  "Kano", "Katsina", "Kebbi", "Kogi", "Kwara", "Lagos",
-  "Nasarawa", "Niger", "Ogun", "Ondo", "Osun", "Oyo",
-  "Plateau", "Rivers", "Sokoto", "Taraba", "Yobe", "Zamfara",
-  "FCT"
-] as const;
+export interface BudgetSector {
+  id: number;
+  name: string;
+  percentage: number;
+  amount: number;
+  color: string;
+}
+
+export interface BudgetExpense {
+  id: number;
+  sector: string;
+  amount: number;
+  percentage: number;
+  note: string;
+}
+
+export interface TrendData {
+  month: string;
+  "2025": number;
+  "2024": number;
+}
+
+export interface BudgetData {
+  state: string;
+  lga: string;
+  year: number;
+  totalBudget: number;
+  governor: BudgetOfficer;
+  lgChairman: BudgetOfficer;
+  sectors: BudgetSector[];
+  expenses: BudgetExpense[];
+  trendData: TrendData[];
+  documents: { name: string; size: string; url: string }[];
+}
+

@@ -1,4 +1,62 @@
-import { ElectionData } from "./types";
+import { ElectionData, BudgetData } from "./types";
+
+export const mockBudgetData: BudgetData = {
+  state: "Oyo",
+  lga: "Ibadan",
+  year: 2024,
+  totalBudget: 2000000000,
+  governor: {
+    name: "Jediidiah Kolawole",
+    position: "Governor",
+    party: "APC",
+    image: "/assets/hero-image.png",
+  },
+  lgChairman: {
+    name: "Jediidiah Kolawole",
+    position: "Local Government Chairman",
+    party: "APC",
+    startDate: "30th March 1984",
+    image: "/assets/hero-image.png",
+  },
+  sectors: [
+    { id: 1, name: "Sector 1", percentage: 40, amount: 800000000, color: "from-pink-500 to-pink-600" },
+    { id: 2, name: "Sector 1", percentage: 35, amount: 700000000, color: "from-cyan-400 to-cyan-500" },
+    { id: 3, name: "Sector 1", percentage: 27, amount: 540000000, color: "from-purple-500 to-purple-600" },
+    { id: 4, name: "Sector 1", percentage: 24.5, amount: 490000000, color: "from-rose-500 to-rose-600" },
+    { id: 5, name: "Sector 1", percentage: 27, amount: 540000000, color: "from-indigo-600 to-indigo-700" },
+    { id: 6, name: "Sector 1", percentage: 19.2, amount: 384000000, color: "from-amber-600 to-amber-700" },
+    { id: 7, name: "Sector 1", percentage: 16, amount: 320000000, color: "from-blue-400 to-blue-500" },
+    { id: 8, name: "Sector 1", percentage: 11, amount: 220000000, color: "from-orange-500 to-orange-600" },
+  ],
+  expenses: [
+    { id: 1, sector: "Technology", amount: 450449.07, percentage: 27, note: "Placeholder accumsan imperdiet tempor Ora limitanr..." },
+    { id: 2, sector: "Industrials", amount: 690943.17, percentage: 42, note: "Ipsum et ligula dictum, consulla emet ut, facilisis mars..." },
+    { id: 3, sector: "Healthcare", amount: 1053282.763, percentage: 54, note: "Interdum et maxiculis frames ac ante ipsum primus in..." },
+    { id: 4, sector: "Real Estate", amount: 652878.53, percentage: 39, note: "Placeholder accumsan imperdiet tempor Ora limitanr..." },
+    { id: 5, sector: "Consumer Defensive", amount: 740244.71, percentage: 20, note: "Placeholder accumsan imperdiet tempor Ora limitanr..." },
+    { id: 6, sector: "Communication Services", amount: 611762.62, percentage: 17, note: "Integer et augue lacus, laculu ero id, bientesq sam..." },
+    { id: 7, sector: "Consumer Cyclical", amount: 625458.45, percentage: 16, note: "Interdum et maxiculis frames ac ante ipsum primus in..." },
+    { id: 8, sector: "Financial Services", amount: 347396.05, percentage: 35, note: "Duis an augue et laoreet congue Lorem vebus aulis..." },
+  ],
+  trendData: [
+    { month: "Jan 2024", "2025": 2000, "2024": 2400 },
+    { month: "Feb 2024", "2025": 3000, "2024": 1398 },
+    { month: "Mar 2024", "2025": 2000, "2024": 9800 },
+    { month: "Apr 2024", "2025": 2780, "2024": 3908 },
+    { month: "May 2024", "2025": 1890, "2024": 4800 },
+    { month: "Jun 2024", "2025": 2390, "2024": 3800 },
+    { month: "Jul 2024", "2025": 3490, "2024": 4300 },
+    { month: "Aug 2024", "2025": 2100, "2024": 2400 },
+    { month: "Sep 2024", "2025": 2490, "2024": 1398 },
+    { month: "Oct 2024", "2025": 3000, "2024": 9800 },
+    { month: "Nov 2024", "2025": 1900, "2024": 3908 },
+    { month: "Dec 2024", "2025": 2400, "2024": 4800 },
+  ],
+  documents: [
+    { name: "Local report for Engr. Oyenga", size: "13.3MB", url: "#" },
+    { name: "Local report for Engr. Oye...", size: "13.3MB", url: "#" },
+  ],
+};
 
 export const mockElectionData: ElectionData = {
   year: 2023,
